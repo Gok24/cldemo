@@ -1,0 +1,427 @@
+@import url(https://db.onlinewebfonts.com/c/d20eb52d29d9f6d56c1c8fc0eefc560e?family=Graphik-Bold);
+@import url(https://db.onlinewebfonts.com/c/076550ba1f35c1eeb75f430fee2bb6a9?family=Graphik-Regular);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+    font-family: sans-serif;
+}
+.a{
+    font-family: "Graphik-Bold";
+}
+.b{
+    font-family: "Graphik-Regular";
+}
+.container,.xpecon{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.xpecon{
+    display: flex;
+    z-index: 99;
+    margin: 10px;
+}
+.xpecon{
+    display: none;
+}
+.fxpe{
+    margin-top: 40px !important;
+}
+.topLabel{
+    font-family: "Graphik-Regular";
+    font-size: 0.7rem;
+    padding: 5px 8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background: #00E95C;
+    border-radius: 5px;
+    width: fit-content;
+}
+.textJumbo{
+    margin: 10px 0;
+    font-size: 2.7rem;
+    color: #003512;
+    font-family: "Graphik-Bold";
+}
+.lix{
+    height: 17px;
+    width: 17px;
+    display: block;
+    background: transparent;
+    border: 2px solid #222;
+    position: relative;
+    top: 13px !important;
+    border-radius: 4px;
+}
+.textMedJumbo{
+    margin: 10px 0;
+    font-size: 1.7rem;
+    color: #003512;
+    font-family: "Graphik-Regular";
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: 1px;
+    
+}
+.textMedJumbo.fxpe{
+    font-size: 1.8rem;
+}
+.textSmall{
+    font-size: 1rem;
+    font-family: "Graphik-Regular";
+    font-weight: 400;
+    margin: 10px 5px;
+    line-height: 1.5;
+}
+.subTxt{
+    font-size: 0.9rem;
+    font-family: "Graphik-Regular";
+    font-weight: 600;
+    margin: 18px 5px 10px 5px;
+    line-height: 1.5;
+}
+.textMedium{
+    font-family: "Graphik-Bold";
+    font-size: 1.3rem;
+    color: #003512;
+    
+}
+.actionComponent{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.actionPrimary .primaryBtn,.actionSecondary .secondaryBtn,.bgonmq{
+    font-family: "Graphik-Regular";
+    width: 100%;
+    outline: none;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    border: none;
+    color: #fff;
+    border: 2px solid rgb(0, 93, 31);
+    background: rgb(0, 93, 31);
+    border-radius: 50px;
+}
+.actionSecondary .secondaryBtn{
+    background: #fff;
+    color: rgb(0, 93, 31);
+}
+a{
+    all: unset;
+}
+.mbt{
+    margin-bottom: 50px;
+}
+.listContainer{
+    margin: 30px 5px;
+}
+.liItem{
+    display: flex;
+    align-items: flex-start;
+}
+.liIcon{
+    color: rgb(0, 93, 31);
+    position: relative;
+    top: 10px;
+}
+.liIcon span{
+    font-size: 1.46rem;
+}
+.dpx{
+    margin: 10px !important;
+  }
+  .opts.optsg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 2px;
+  }
+  .op.opg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+@media screen and (min-width: 768px) {
+    /* Your styles here */
+    .container{
+        margin: 40px;
+    }
+    .textJumbo{
+        font-size: 3.5rem;
+    }
+    .textSmall{
+        font-size: 1.14rem;
+    }
+    .actionComponent{
+        display: flex;
+        flex-direction: row;
+    }
+    .actionPrimary .primaryBtn,.actionSecondary .secondaryBtn{
+        padding: 20px 40px;
+    }
+    .bgonmq{
+        padding: 25px 70px !important;
+    }
+    .textMedium{
+        font-size: 2rem;
+    }
+    .listContainer{
+        margin: 30px 5px;
+    }
+    .subTxt{
+        font-size: 1.05rem;
+    }
+    .topbar{
+        width: 100%;
+    }
+    .qs{
+        margin: 10px 70px;
+        text-align: center;
+    }
+    .opts{
+        margin: 10px 10px;
+        width: 100%;
+        max-width: 500px;
+    }
+    .dpx{
+        margin: 10px 40px !important;
+        width: 100%;
+        max-width: 500px;
+    }
+    .opts.optsg{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 2 per row */
+        gap: 2px;
+      }
+      .op.opg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        justify-content: space-between;
+        width: 100px;
+      }
+      .fxpe{
+        font-size: 2.5rem !important;
+      }
+      .fxpes{
+        width: 100%;
+      }
+      .fxpe,.fxpes{
+        text-align: center !important;
+      }
+      .xpecfl{
+        align-items: center !important;
+        justify-content: center;
+        text-align: center !important;
+      }
+      .fxpembtn{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+      }
+      
+
+  }
+
+  @media screen and (min-width: 991px){
+    .hme.container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .hme.textJumbo{
+        text-align: center;
+        max-width: 900px;
+    }
+    .hme.textSmall{
+        text-align: center !important;
+        margin: 10px 100px;
+        max-width: 700px;
+    }
+    .xpecfl.fxpes p{
+        align-items: center !important;
+        justify-content: center;
+        text-align: center !important;
+      }
+      .xpecfl.xpe.xss.textSmall{
+        color: red !important;
+        max-width: none !important;
+        width: none !important;
+        align-items: center !important;
+        justify-content: center;
+        text-align: center !important;
+      }
+  }
+  @media screen and (min-width: 1199px){
+    .xpe.textJumbo{
+        max-width: 900px;
+        margin: 10px 50px;
+    }
+    .xpe.textSmall{
+        max-width: 700px;
+        margin: 10px 50px;
+    }
+    .xpe.xss.textSmall{
+        max-width: 850px;
+    }
+    .xpe.actionComponent{
+        margin: 10px 50px;
+    }
+    .mbt{
+        margin-bottom: 70px !important;
+    }
+    .jpe .listContainer{
+        margin: 0px 0px;
+    }
+    .xpecfl.xpe.xss.textSmall.fxpes{
+        color: red !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+      }
+  }
+
+  .overlay{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 85;
+    overflow: hidden;
+    background: #ffffff;
+  }
+.overlay{
+    display: none;
+}
+
+  .boxcontainer{
+    margin: 10px;
+    padding: 10px;
+    height: 95%;
+    overflow: scroll;
+  }
+  .layouts{
+
+  }
+  .topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contitle{
+    font-family: "Graphik-Regular";
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .lay1,.lay2,.lay3,.lay4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    justify-content: space-between;
+  }
+  .lay1{
+    z-index: 86;
+    display: none;
+  }
+  .lay2{
+    position: absolute;
+    top: 20px;
+    width: 100vw;
+    overflow-y: scroll;
+    left: 0;
+    background: #ffffff;
+  }
+  .lay2 .q{
+    margin: 20px;
+  }
+  .lay2{
+    display: none;
+    z-index: 87;
+  }
+  .lay3{
+    display: none;
+  }
+  .lay4{
+    display: none;
+  }
+  .lay1{
+    display: flex;
+  }
+  .ifss{
+    font-size: 1.2rem !important;
+  }
+  .ic img{
+    height: 24px;
+  }
+  .qs{
+    margin-top: auto;
+  }
+  .opts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: auto;
+  }
+
+
+  .op{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Graphik-Regular";
+    font-weight: 600;
+    margin: 5px 10px;
+    padding: 30px 25px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+  }
+  .op.opg{
+    padding: 25px 10px;
+    font-size: 0.9rem;
+    border: 2px solid rgb(222, 222, 222);
+  }
+  .op.xvis{
+    border: 2px solid #005d1f;
+  }
+
+  .qs.l3qs{
+    margin: 40px 0 0 0 !important;
+  }
+  .backchev.l1bc{
+    opacity: 0;
+  }
+  .topbar,.opts,.qs,.dpx{
+    width: 90%;
+  }
+
+  /* .overlay{
+    display: block;
+  }
+  .lay1{
+    display: none;
+  }
+  .xpecon{
+    display: flex;
+  } */
