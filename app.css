@@ -321,9 +321,6 @@ a{
     height: 95%;
     overflow: scroll;
   }
-  .layouts{
-
-  }
   .topbar{
     display: flex;
     align-items: center;
@@ -425,3 +422,9 @@ a{
   .xpecon{
     display: flex;
   } */
+   .op{
+    cursor: pointer;
+   }
+   .topbar{
+    cursor: pointer;
+   }
