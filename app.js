@@ -223,6 +223,11 @@ contl1.onclick = function(){
         // console.log(selectedMS)
         lay1.style.display="none"
         lay2.style.display="flex"
+        if(selectedMS=="single"){
+            document.querySelector(".hycon").style.display="none"
+        }else{
+            document.querySelector(".hycon").style.display="inline"
+        }
     }
 }
 contl2.onclick = function(){
@@ -763,3 +768,4 @@ di = `<div class="listContainer">
             };
         }
         
+
