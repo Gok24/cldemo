@@ -1,5 +1,8 @@
 @import url(https://db.onlinewebfonts.com/c/d20eb52d29d9f6d56c1c8fc0eefc560e?family=Graphik-Bold);
 @import url(https://db.onlinewebfonts.com/c/076550ba1f35c1eeb75f430fee2bb6a9?family=Graphik-Regular);
+
+@import url('https://fonts.cdnfonts.com/css/mont');
+
 *{
     margin: 0;
     padding: 0;
@@ -32,11 +35,16 @@ body{
 }
 .topLabel{
     font-family: "Graphik-Regular";
+
     font-size: 0.7rem;
     padding: 5px 8px;
     letter-spacing: 1px;
     font-weight: 600;
+    font-family: "Mont";
+    font-weight: 600;
     background: #00E95C;
+    background: #BB0007;
+    color: #fff;
     border-radius: 5px;
     width: fit-content;
 }
@@ -45,6 +53,9 @@ body{
     font-size: 2.7rem;
     color: #003512;
     font-family: "Graphik-Bold";
+    font-family: "Mont";
+    font-weight: 900;
+    color: #000000;
 }
 .lix{
     height: 17px;
@@ -74,6 +85,8 @@ body{
     font-size: 1rem;
     font-family: "Graphik-Regular";
     font-weight: 400;
+    font-family: "Mont";
+    font-weight: 200;
     margin: 10px 5px;
     line-height: 1.5;
 }
@@ -83,11 +96,17 @@ body{
     font-weight: 600;
     margin: 18px 5px 10px 5px;
     line-height: 1.5;
+    color: #750004;
+    color: #000;
 }
 .textMedium{
     font-family: "Graphik-Bold";
+    font-family: "Mont";
+    font-weight: 900;
     font-size: 1.3rem;
     color: #003512;
+    color: #750004;
+    color: #000;
     
 }
 .actionComponent{
@@ -108,11 +127,21 @@ body{
     color: #fff;
     border: 2px solid rgb(0, 93, 31);
     background: rgb(0, 93, 31);
+    background: #FF0009;
+    border: 2px solid #BB0007;
     border-radius: 50px;
+    cursor: pointer;
 }
 .actionSecondary .secondaryBtn{
     background: #fff;
     color: rgb(0, 93, 31);
+    color: #750004;
+}
+.actionSecondary .secondaryBtn:hover{
+  background: #ffe8e8;
+}
+.actionPrimary .primaryBtn:hover{
+  background: #af0006;
 }
 a{
     all: unset;
@@ -129,6 +158,7 @@ a{
 }
 .liIcon{
     color: rgb(0, 93, 31);
+    color: #750004;
     position: relative;
     top: 10px;
 }
@@ -401,6 +431,7 @@ a{
   }
   .op.xvis{
     border: 2px solid #005d1f;
+    border: 2px solid #750004;
   }
 
   .qs.l3qs{
