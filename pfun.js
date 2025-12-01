@@ -25,7 +25,8 @@ function printDiv(divId) {
         printWindow.document.write('<link href="' + fontLink.href + '" rel="stylesheet">');
     }
 
-    printWindow.document.write('</head><body>');
+    const bodyClass = document.body.className || "";
+    printWindow.document.write('</head><body class="' + bodyClass + '">');
     printWindow.document.write(divContent);  // Insert the content of the printableDiv
     printWindow.document.write('</body></html>');
 
