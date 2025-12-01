@@ -216,6 +216,7 @@ l4allop.forEach(op => {
 
 
 contl1.onclick = function(){
+    const hycons = document.querySelectorAll(".hycon");
     if(selectedMS==""){
         alert("please select an option")
     }
@@ -224,9 +225,13 @@ contl1.onclick = function(){
         lay1.style.display="none"
         lay2.style.display="flex"
         if(selectedMS=="single"){
-            document.querySelector(".hycon").style.display="none"
+            hycons.forEach(el => el.style.display = "none");
+            document.body.classList.add("hide-hycon");
+
         }else{
-            document.querySelector(".hycon").style.display="inline"
+            hycons.forEach(el => el.style.display = "inline");
+            document.body.classList.remove("hide-hycon");
+
         }
     }
 }
@@ -683,7 +688,7 @@ xpts =`<div class="xpe xss textSmall">
                 <div class="liIcon lix"><span>&nbsp;&nbsp;&nbsp;</span></div>
                 <div class="textSmall">Your social security number or tax ID number</div>
             </div>
-            <div class="liItem">
+            <div class="liItem hycon">
                 <div class="liIcon lix"><span>&nbsp;&nbsp;&nbsp;</span></div>
                 <div class="textSmall">Your spouse’s full name, social security number or tax ID number, and date of birth</div>
             </div>
@@ -756,8 +761,8 @@ di = `<div class="listContainer">
             if (fontLink) {
                 printWindow.document.write('<link href="' + fontLink.href + '" rel="stylesheet">');
             }
-        
-            printWindow.document.write('</head><body>');
+            const bodyClass = document.body.className || "";
+            printWindow.document.write('</head><body class="' + bodyClass + '">');
             printWindow.document.write(divContent);  // Insert the content of the printableDiv
             printWindow.document.write('</body></html>');
         
@@ -768,4 +773,3 @@ di = `<div class="listContainer">
             };
         }
         
-
